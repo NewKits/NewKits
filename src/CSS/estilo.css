@@ -1,0 +1,12 @@
+.banner{
+    background-image: url(../IMG/Tenis.webp);
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transition: background-image 1s ease-in-out;
+}

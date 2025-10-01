@@ -22,3 +22,7 @@ function validar() {
     }
 
 }
+
+function comprar(){
+    location.href = "comprar.html"
+}
