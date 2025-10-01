@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./src/CSS/estilo.css">
+</head>
+<body>
+    <main>
+        <section class="login-container">
+            <h2>Login</h2>
+            <form>
+                <div>
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" autocomplete="username">
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" autocomplete="current-password">
+                </div>
+                
+                <button type="submit" onclick="validar(); return false">Entrar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="./src/JS/script.js"></script>
+</body>
+</html>
