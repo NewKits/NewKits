@@ -10,7 +10,7 @@ function validar() {
     if (usuario === "Admin") {
         alert("Bem-vindo!");
         // Redireciona para a página principal
-        location.href = "home.html";
+        location.href = "./src/pages/home.html";
 
     } else if (usuario === "" || senha === "") {
         alert("Por favor, preencha todos os campos.");
