@@ -3,29 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
     <link rel="stylesheet" href="./src/CSS/estilo.css">
+    <title>Newkits</title>
 </head>
 <body>
-    <main>
-        <section class="login-container">
-            <h2>Login</h2>
-            <form>
-                <div>
-                    <label for="usuario">Usuário:</label>
-                    <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" autocomplete="username">
-                </div>
+    <!-- <div class="frete"> Compre pelo APP e ganhe  <strong>frete grátis</strong> "br"</div> -->
 
-                <div>
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" autocomplete="current-password">
-                </div>
-                
-                <button type="submit" onclick="validar(); return false">Entrar</button>
-            </form>
+    <header class="cabecalho">
+        <nav class="cabecalho-nav">
+            <img src="#" alt="" class="logo">
+            <ul class="cabecalho-menu">
+                <li><a href="#">Lançamentos</a></li>
+                <li><a href="#">Camisas</a></li>
+                <li><a href="#">Shorts</a></li>
+                <li><a href="#">Tênis</a></li>
+                <li><a href="#">Acessórios</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main class="principal">
+        <section class="banner">
+        </section>
+        <section class="sessao-compras">
+            <h2 class="compras-titulo">Mais comprados</h2>
+            <div class="carrossel">
+                <div class="carrossel-lista"></div>
+                    <div class="carrossel-lista">
+                        <div class="carrossel-item">
+                            <a href="camisa1.html">
+                                <img src="./src/IMG/camisa.webp" alt="roupa1">
+                                <h3>Camisa 1</h3>
+                                <p>R$35,00</p>
+                            </a>
+                        </div>
+                        <div class="carrossel-item">
+                            <a href="camisa1.html">
+                                <img src="./src/IMG/camisa.webp" alt="roupa1">
+                                <h3>Camisa 1</h3>
+                                <p>R$35,00</p>
+                            </a>
+                        </div>
+                        <div class="carrossel-item">
+                            <a href="camisa1.html">
+                                <img src="./src/IMG/camisa.webp" alt="roupa1">
+                                <h3>Camisa 1</h3>
+                                <p>R$35,00</p>
+                            </a>
+                        </div>
+                        <div class="carrossel-item">
+                            <a href="camisa1.html">
+                                <img src="./src/IMG/camisa.webp" alt="roupa1">
+                                <h3>Camisa 1</h3>
+                                <p>R$35,00</p>
+                            </a>
+                        </div>
+                        <div class="carrossel-item">
+                            <a href="camisa1.html">
+                                <img src="./src/IMG/camisa.webp" alt="roupa1">
+                                <h3>Camisa 1</h3>
+                                <p>R$35,00</p>
+                            </a>
+                        </div>
+                        <div class="carrossel-item">
+                            <a href="camisa1.html">
+                                <img src="./src/IMG/camisa.webp" alt="roupa1">
+                                <h3>Camisa 1</h3>
+                                <p>R$35,00</p>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="btn-carrossel btn-anterior">&lt;</button>
+                    <button class="btn-carrossel btn-proximo">&gt;</button>
+            </div>
+            
+            <h2 class="compras-titulo">Lançamentos</h2>
+            <div class="carrossel">
+                <div class="carrossel-lista"></div>
+                    <div class="carrossel-lista">
+                        <div class="carrossel-item">
+                            <a href="camisa1.html">
+                                <img src="../IMG/camisa.webp" alt="roupa1">
+                                <h3>Camisa 1</h3>
+                            </a>
+                        </div>
+                        <div class="carrossel-item"><img src="./src/IMG/camisa.webp" alt="roupa 2"></div>
+                        <div class="carrossel-item"><img src="./src/IMG/camisa.webp" alt="roupa 3"></div>
+                        <div class="carrossel-item"><img src="./src/IMG/camisa.webp" alt="roupa 4"></div>
+                        <div class="carrossel-item"><img src="./src/IMG/camisa.webp" alt="roupa 5"></div>
+                        <div class="carrossel-item"><img src="./src/IMG/camisa.webp" alt="roupa 6"></div>
+                    </div>
+            </div>
         </section>
     </main>
-
-    <script src="./src/JS/script.js"></script>
+    <footer>
+        <p>&copy;2025-Direitos reservados</p>
+    </footer>
+    <script src="../JS/script.js"></script>
 </body>
 </html>

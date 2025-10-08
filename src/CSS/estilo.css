@@ -1,3 +1,10 @@
+/* Reset Universal */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .banner{
     background-image: url(../IMG/Tenis.webp);
     background-size: cover;
@@ -14,12 +21,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #e2e2e2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
-    
 }
 
 h2 {
@@ -71,16 +74,73 @@ button:hover {
 .cabecalho{
     background-color: black;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: auto;
 }
 .cabecalho-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.cabecalho-menu {
+    display: flex;
+}
+
 .cabecalho-menu li a{
     margin-left: 20px;
     color: white;
     text-decoration: none;
 }
 
-.principal{}
+/* Body */
+
+.sessao-compras {
+    padding: 20px;
+}
+
+.sessao-compras a {
+    text-decoration: none;
+    color: #000;
+}
+
+.compras-titulo {
+    margin-bottom: 20px;
+}
+
+.carrossel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carrossel-lista {
+    display: flex; 
+}
+
+.carrossel img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.carrossel-item {
+    display: flex;
+    text-align: center;
+    min-width: 400px;
+    padding: 10px;
+}
+
+/* Footer */
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    margin: 30px 0;
+}
+
+footer p {
+    padding: 20px;
+}
