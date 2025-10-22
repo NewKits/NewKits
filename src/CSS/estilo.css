@@ -6,10 +6,10 @@
 }
 
 .banner{
-    background-image: url(../IMG/Tenis.webp);
+    background-image: url(../IMG/streetwear.webp);
     background-size: cover;
     height: 500px;
-    background-position: center;
+    background-position: top;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,23 +52,6 @@ input[type="password"] {
     margin-top: 5px;
 }
 
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: black
-}
-
 /* Pagina Home */
 
 .cabecalho{
@@ -87,6 +70,8 @@ button:hover {
 
 .cabecalho-menu {
     display: flex;
+    text-decoration: none;
+    list-style: none;
 }
 
 .cabecalho-menu li a{
@@ -104,6 +89,7 @@ button:hover {
 .sessao-compras a {
     text-decoration: none;
     color: #000;
+    transition: 0.5s ease;
 }
 
 .compras-titulo {
@@ -115,21 +101,63 @@ button:hover {
     overflow: hidden;
 }
 
+
 .carrossel-lista {
     display: flex; 
 }
 
 .carrossel img {
-    border-radius: 5px;
-    width: 100%;
+    border-radius: 2px;
+    background-size: cover;
+    width: 90%;
     height: auto;
 }
 
 .carrossel-item {
     display: flex;
     text-align: center;
-    min-width: 400px;
+    min-width: 350px;
     padding: 10px;
+}
+
+#imagem:hover {
+    animation: aumentar ease-in-out 0.3s alternate;
+}
+
+@keyframes aumentar {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.04);
+    }
+}
+
+.btn-carrossel{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(117, 117, 117, 0.5);
+    border:none;
+    border-radius: 10%;
+    padding:10px;
+    cursor:pointer;
+    color: #757575;
+    transition: 0.5s ease;
+}
+
+.btn-carrossel:hover {
+    background: rgba(68, 68, 68, 0.8);
+    color: #fff;
+}
+
+.btn-anterior{
+    left:0;
+}
+
+.btn-proximo{
+    right:0;
 }
 
 /* Footer */
