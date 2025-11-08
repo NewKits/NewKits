@@ -26,3 +26,20 @@ function validar() {
 function comprar(){
     location.href = "comprar.html"
 }
+
+// SlideShow
+const banner = [ "./src/assets/img/streetwear"];
+
+let i = 0;
+const tempo = 5000;
+const elementoBanner = document.querySelector(".banner");
+
+function slideshow (){
+    elementoBanner.style.backgroundImage = `url(${banner[i]})`
+    i++
+    if (i >= banner.Length) 
+        i = 0;
+
+    setTimeout(slideshow, tempo)
+}
+slideshow();

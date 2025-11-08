@@ -1,3 +1,11 @@
+/* FONTES IMPORTADAS */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+/* Figtree */
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&display=swap');
+/* AR One Sans */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Barlow Semi Condensed */
+
 /* Reset Universal */
 *{
     padding: 0;
@@ -5,29 +13,11 @@
     box-sizing: border-box;
 }
 
-.banner{
-    background-image: url(../IMG/streetwear.webp);
-    background-size: cover;
-    height: 500px;
-    background-position: top;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    transition: background-image 1s ease-in-out;
-}
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     background-color: #e2e2e2;
     height: 100vh;
     margin: 0;
-}
-
-h2 {
-    color: #333;
-    text-align: center;
 }
 
 p {
@@ -55,8 +45,9 @@ input[type="password"] {
 /* Pagina Home */
 
 .cabecalho{
+    font-family: "Figtree", sans-serif;
     background-color: black;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -78,6 +69,36 @@ input[type="password"] {
     margin-left: 20px;
     color: white;
     text-decoration: none;
+    transition: 0.1s;
+}
+
+.cabecalho-menu li a:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+}
+
+.banner{
+    background-image: url(../IMG/streetwear.webp);
+    background-size: cover;
+    height: 850px;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transition: background-image 1s ease-in-out;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(farthest-corner at center, transparent 0%, transparent 25%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 1;
 }
 
 /* Body */
@@ -93,12 +114,24 @@ input[type="password"] {
 }
 
 .compras-titulo {
-    margin-bottom: 20px;
+    font-family: "Figtree", sans-serif;
+    color: #333;
+    text-align: center;
 }
 
 .carrossel {
     position: relative;
     overflow: hidden;
+}
+
+.carrossel hr {
+    align-items: center;
+    border: none;
+    height: 3px;
+    width: 20%;
+    background: linear-gradient(to right, transparent, #000, transparent);
+    margin: 10px auto;
+    border-radius: 5px;
 }
 
 
@@ -117,21 +150,24 @@ input[type="password"] {
     display: flex;
     text-align: center;
     min-width: 350px;
-    padding: 10px;
+    margin: 10px;
+    transition: 0.2s ease-in-out;
 }
 
-#imagem:hover {
-    animation: aumentar ease-in-out 0.3s alternate;
+.carrossel-item:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* transform: translateY(-8px); */
 }
 
-@keyframes aumentar {
-    from {
-        transform: scale(1);
-    }
+.carrossel-item h3{
+    font-family: "AR One sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+}
 
-    to {
-        transform: scale(1.04);
-    }
+.carrossel-item p{
+    font-weight: 500;
+    font-size: 1.2em;
 }
 
 .btn-carrossel{
@@ -166,7 +202,42 @@ footer {
     background: #000;
     color: #fff;
     text-align: center;
-    margin: 30px 0;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.sumario {
+    display: flex;
+    position: relative;
+    align-items: start;
+    gap: 80px;
+    justify-content: center;
+}
+
+.coluna {
+    position: relative;
+    width: 20%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.coluna-titulo{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.coluna ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    text-align: justify;
+    gap: 10px;
+    list-style: none;
 }
 
 footer p {
