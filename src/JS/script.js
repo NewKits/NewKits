@@ -28,18 +28,28 @@ function comprar(){
 }
 
 // SlideShow
-const banner = [ "./src/assets/img/streetwear"];
+// const banner = [ 
+//     {imagem: "./src/assets/IMG/streetwear"}, 
+//     {imagem: "./src/assets/IMG/BannerCamisetas"}, 
+//     {imagem: "./src/assets/img/BannerShorts"}
+// ];
+
+const bannerItems = [
+    "./src/IMG/BannerCamisetas.png", 
+    "./src/IMG/BannerShorts.png"
+];
 
 let i = 0;
 const tempo = 5000;
 const elementoBanner = document.querySelector(".banner");
 
 function slideshow (){
-    elementoBanner.style.backgroundImage = `url(${banner[i]})`
-    i++
-    if (i >= banner.Length) 
+    elementoBanner.style.backgroundImage = `url(${bannerItems[i]})`;
+    i++;
+    if (i >= bannerItems.length) {
         i = 0;
-
-    setTimeout(slideshow, tempo)
+    };
+    setTimeout(slideshow, tempo);
 }
+
 slideshow();

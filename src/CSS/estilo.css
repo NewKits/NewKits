@@ -78,7 +78,7 @@ input[type="password"] {
 }
 
 .banner{
-    background-image: url(../IMG/streetwear.webp);
+    /* background-image: url(../IMG/streetwear.webp); */
     background-size: cover;
     height: 850px;
     background-position: top;
@@ -242,6 +242,11 @@ footer {
     text-align: justify;
     gap: 10px;
     list-style: none;
+}
+
+.coluna ul li a{
+    text-decoration: none;
+    color: #fff;
 }
 
 footer p {
