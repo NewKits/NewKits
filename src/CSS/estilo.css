@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+/* Efeito Deslizante no Scroll */
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Barlow Semi Condensed", sans-serif;
     background-color: #e2e2e2;
@@ -51,7 +56,6 @@ input[type="password"] {
     display: flex;
     justify-content: center;
     text-align: center;
-    width: auto;
 }
 .cabecalho-nav{
     display: flex;
@@ -75,6 +79,16 @@ input[type="password"] {
 .cabecalho-menu li a:hover {
     border-bottom: 2px solid #fff;
     padding-bottom: 3px;
+}
+
+.icone{
+    fill: #fff;
+    stroke: #fff;
+    width: 30px;
+}
+
+.logo{
+    width: 70px;
 }
 
 .banner{
