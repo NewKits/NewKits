@@ -29,48 +29,35 @@ p {
     margin-bottom: 15px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: black;
-}
-
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    margin-top: 5px;
-}
-
 /* Pagina Home */
+
+/* CABEÇALHO */
 
 .cabecalho{
     font-family: "Figtree", sans-serif;
     background-color: black;
-    padding: 30px;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: center;
-    text-align: center;
 }
+
 .cabecalho-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .cabecalho-menu {
     display: flex;
     text-decoration: none;
     list-style: none;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .cabecalho-menu li a{
-    margin-left: 20px;
+    margin: 0 10px;
     color: white;
     text-decoration: none;
     transition: 0.1s;
@@ -83,13 +70,15 @@ input[type="password"] {
 
 .icone{
     fill: #fff;
-    stroke: #fff;
-    width: 30px;
+    width: 2.5rem;
+    height: auto;
 }
 
 .logo{
     width: 70px;
 }
+
+/* BANNER */
 
 .banner{
     /* background-image: url(../IMG/streetwear.webp); */

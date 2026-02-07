@@ -35,9 +35,9 @@ function comprar(){
 // ];
 
 const bannerItems = [
-    "./src/IMG/BannerPromoCamisetas.png", 
-    "./src/IMG/BannerPromoCalcas.png",
-    "./src/IMG/BannerPromoShorts.png"
+    "./src/IMG/Banners/BannerPromoCamisetas.png", 
+    "./src/IMG/Banners/BannerPromoCalcas.png",
+    "./src/IMG/Banners/BannerPromoShorts.png"
 ];
 
 let i = 0;
