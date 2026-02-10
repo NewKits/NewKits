@@ -25,10 +25,6 @@ body {
     margin: 0;
 }
 
-p {
-    margin-bottom: 15px;
-}
-
 /* Pagina Home */
 
 /* CABEÇALHO */
@@ -77,33 +73,6 @@ p {
 .logo{
     width: 70px;
 }
-
-/* BANNER */
-
-.banner{
-    /* background-image: url(../IMG/streetwear.webp); */
-    background-size: cover;
-    height: 850px;
-    background-position: top;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    transition: background-image 1s ease-in-out;
-}
-
-.banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(farthest-corner at center, transparent 0%, transparent 25%, rgba(0, 0, 0, 0.5) 100%);
-    z-index: 1;
-}
-
 /* Body */
 
 .sessao-compras {
@@ -114,12 +83,6 @@ p {
     text-decoration: none;
     color: #000;
     transition: 0.5s ease;
-}
-
-.compras-titulo {
-    font-family: "Figtree", sans-serif;
-    color: #333;
-    text-align: center;
 }
 
 .carrossel {
@@ -197,10 +160,6 @@ p {
 
 .btn-proximo{
     right:0;
-}
-
-.imagem-divisoria{
-    width: 100%;
 }
 
 /* Footer */
