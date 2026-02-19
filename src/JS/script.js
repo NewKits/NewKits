@@ -27,13 +27,6 @@ function comprar(){
     location.href = "comprar.html"
 }
 
-// SlideShow
-// const banner = [ 
-//     {imagem: "./src/assets/IMG/streetwear"}, 
-//     {imagem: "./src/assets/IMG/BannerCamisetas"}, 
-//     {imagem: "./src/assets/img/BannerShorts"}
-// ];
-
 const bannerItems = [
     "./src/IMG/Banners/BannerPromoCamisetas.png", 
     "./src/IMG/Banners/BannerPromoCalcas.png",
@@ -54,3 +47,20 @@ function slideshow (){
 }
 
 slideshow();
+
+const btnIcone = document.querySelector('.btn-icone');
+const barraPerfil = document.querySelector('.barra-perfil');
+
+if (btnIcone && barraPerfil) {
+    btnIcone.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        barraPerfil.classList.toggle('active');
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!btnIcone.contains(event.target) && !barraPerfil.contains(event.target)) {
+            barraPerfil.classList.remove('active');
+        }
+    });
+}

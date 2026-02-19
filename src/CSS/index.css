@@ -7,7 +7,7 @@ p {
 .banner{
     /* background-image: url(../IMG/streetwear.webp); */
     background-size: cover;
-    height: 850px;
+    height: 80vh;
     background-position: top;
     display: flex;
     justify-content: center;

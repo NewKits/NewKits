@@ -42,6 +42,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: relative;
 }
 
 .cabecalho-menu {
@@ -73,6 +74,54 @@ body {
 .logo{
     width: 70px;
 }
+
+.btn-icone {
+    position: relative;
+}
+
+.barra-perfil{
+    background-color: #FFF;
+    z-index: 2;
+    top: 100%;
+    right: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    position: absolute;
+    min-width: 240px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.barra-perfil.active {
+    display: block;
+    opacity: 1;
+}
+
+.barra-perfil nav ul{
+    list-style: none;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.barra-perfil nav ul li{
+    padding: 0;
+    margin: 0;
+}
+
+.barra-perfil nav ul li a{
+    display: block;
+    padding: 12px 20px;
+    color: #000;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.barra-perfil nav ul li a:hover{
+    background-color: #f0f0f0;
+    padding-left: 25px;
+}
+
 /* Body */
 
 .sessao-compras {
