@@ -100,13 +100,13 @@ body {
 
 .barra-perfil nav ul{
     list-style: none;
-    padding: 15px 0;
-    margin: 0;
+    padding: 0.5rem 0;
 }
 
 .barra-perfil nav ul li{
     padding: 0;
     margin: 0;
+    font-size: 16px;
 }
 
 .barra-perfil nav ul li a{
