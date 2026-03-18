@@ -38,6 +38,9 @@ const tempo = 5000;
 const elementoBanner = document.querySelector(".banner");
 
 function slideshow (){
+    if (!elementoBanner) {
+        return;
+    }
     elementoBanner.style.backgroundImage = `url(${bannerItems[i]})`;
     i++;
     if (i >= bannerItems.length) {
@@ -46,7 +49,9 @@ function slideshow (){
     setTimeout(slideshow, tempo);
 }
 
-slideshow();
+if (elementoBanner) {
+    slideshow();
+}
 
 const btnIcone = document.querySelector('.btn-icone');
 const barraPerfil = document.querySelector('.barra-perfil');
