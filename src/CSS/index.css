@@ -37,3 +37,26 @@ p {
 .imagem-divisoria{
     width: 100%;
 }
+
+.sobre-nos {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 4rem 15rem;
+}
+
+.sobre-nos h1 {
+    font-family: "Figtree", sans-serif;
+    padding-bottom: 0.4rem;
+}
+
+.sobre-nos p {
+    font-size: 1.4rem;
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        height: 40vh;
+    }
+}
