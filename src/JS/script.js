@@ -28,9 +28,9 @@ function comprar(){
 }
 
 const bannerItems = [
-    "./src/IMG/Banners/BannerPromoCamisetas.png", 
-    "./src/IMG/Banners/BannerPromoCalcas.png",
-    "./src/IMG/Banners/BannerPromoShorts.png"
+    "../IMG/Banners/BannerPromoCamisetas.png", 
+    "../IMG/Banners/BannerPromoCalcas.png",
+    "../IMG/Banners/BannerPromoShorts.png"
 ];
 
 let i = 0;

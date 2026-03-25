@@ -25,7 +25,7 @@ body {
     margin: 0;
 }
 
-/* Pagina Home */
+/* Pagina Sobre Nós */
 
 /* CABEÇALHO */
 
@@ -209,6 +209,41 @@ body {
 
 .btn-proximo{
     right:0;
+}
+
+.grid-roupas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 5rem;
+}
+
+.grid-item{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    transition: 0.2s ease-in-out;
+    padding: 0 10px;
+}
+
+.grid-item img{
+    width: 100%;
+    height: auto;
+}
+
+.grid-item:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.grid-item h3{
+    font-family: "AR One sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.grid-item p{
+    font-weight: 500;
+    font-size: 1.2em;
 }
 
 /* Footer */
