@@ -45,6 +45,12 @@ body {
     position: relative;
 }
 
+.cabecalho-config {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .cabecalho-menu {
     display: flex;
     text-decoration: none;
@@ -122,6 +128,22 @@ body {
     padding-left: 25px;
 }
 
+.hamburguer {
+    display: none;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.linha{
+    display: block;
+    width: 3rem;
+    height: .3rem;
+    background: #fff;
+    margin: .5rem auto;
+    border-radius: 1px;
+    transition: .5s;
+}
 /* Body */
 
 .sessao-compras {
@@ -290,7 +312,7 @@ footer {
     flex-direction: column;
     width: 100%;
     align-items: start;
-    text-align: justify;
+    text-align: left;
     gap: 10px;
     list-style: none;
 }
@@ -302,4 +324,67 @@ footer {
 
 footer p {
     padding: 20px;
+}
+
+@media (max-width: 768px){
+    /* HAMBURGUER */
+    .cabecalho {
+       padding: 01rem 1rem;
+    }
+
+    .cabecalho-menu{
+        width:100%;
+        height:100vh;
+        position:absolute;
+        z-index:1;
+        top:0;
+        left:-100%;
+        gap:0;
+        display: none;
+        background-color: #000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalho-menu.active{
+        left:0;
+        display: flex;
+    }
+
+    .hamburguer{
+        display:block;
+        transition: 0.3s ease-in-out;
+    }
+
+    .hamburguer.active .linha:nth-child(1){
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .hamburguer.active .linha:nth-child(2){
+        display: none;
+    }
+    .hamburguer.active .linha:nth-child(3){
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* BODY */
+    .carrossel-item {
+        min-width: 250px;
+        margin: 5px;
+    }
+    .grid-roupas {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        margin: 1rem;
+    }
+    .grid-item{
+        font-size: 0.9rem;
+    }
+    /* RESPONSIVIDADE FOOTER */
+    .sumario{
+        gap: 20px;
+    }
+    .coluna{
+        width: 40%;
+        padding: 0 10px;
+    }
 }

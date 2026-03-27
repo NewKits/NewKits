@@ -5,7 +5,6 @@ p {
 /* BANNER */
 
 .banner{
-    /* background-image: url(../IMG/streetwear.webp); */
     background-size: cover;
     height: 80vh;
     background-position: top;
@@ -51,6 +50,9 @@ p {
 
 @media (max-width: 768px) {
     .banner {
-        height: 40vh;
+        height: 30vh;
+    }
+    .sobre-nos {
+        padding: 2rem;
     }
 }

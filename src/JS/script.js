@@ -69,3 +69,24 @@ if (btnIcone && barraPerfil) {
         }
     });
 }
+
+// HAMBURGUER MENU
+const hamburguer = document.querySelector('.hamburguer');
+const cabecalhoMenu = document.querySelector('.cabecalho-menu');
+
+function toggleMenu(){
+    if (!hamburguer || !cabecalhoMenu) {
+        return;
+    }
+    hamburguer.classList.toggle('active');
+    cabecalhoMenu.classList.toggle('active');
+}
+
+if (hamburguer && cabecalhoMenu) {
+    hamburguer.addEventListener('click', toggleMenu);
+    cabecalhoMenu.addEventListener('click', (event) => {
+        if (event.target.classList.contains('item-menu')) {
+            toggleMenu();
+        }
+    });
+}
