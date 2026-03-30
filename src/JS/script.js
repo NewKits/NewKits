@@ -90,3 +90,58 @@ if (hamburguer && cabecalhoMenu) {
         }
     });
 }
+
+// CARROSSEL DE IMAGENS
+function iniciarCarrosseis() {
+    const carrosseis = document.querySelectorAll('.carrossel');
+
+    carrosseis.forEach((carrossel) => {
+        const lista = carrossel.querySelector('.carrossel-lista');
+        const itens = carrossel.querySelectorAll('.carrossel-item');
+        const btnAnterior = carrossel.querySelector('.btn-anterior');
+        const btnProximo = carrossel.querySelector('.btn-proximo');
+
+        if (!lista || !itens.length || !btnAnterior || !btnProximo) 
+            return;
+
+        let indice = 0;
+        let passo = 0;
+
+        function calcularPasso() {
+            const primeiro = itens[0];
+            const estilo = window.getComputedStyle(primeiro);
+            const margemX = parseFloat(estilo.marginLeft) + parseFloat(estilo.marginRight);
+            passo = primeiro.getBoundingClientRect().width + margemX;
+        }
+
+        function maxIndice() {
+            const itensPossiveis = Math.max(1, Math.floor(carrossel.clientWidth / passo));
+            return Math.max(0, itens.length - itensPossiveis);
+        }
+
+        function atualizar() {
+            lista.style.transform = 'translateX(-' + (indice * passo) + 'px)';
+        }
+
+        btnProximo.addEventListener('click', () => {
+            indice = Math.min(indice + 1, maxIndice());
+            atualizar();
+        });
+
+        btnAnterior.addEventListener('click', () => {
+            indice = Math.max(indice - 1, 0);
+            atualizar();
+        });
+
+        window.addEventListener('resize', () => {
+            calcularPasso();
+            indice = Math.min(indice, maxIndice());
+            atualizar();
+        });
+
+        calcularPasso();
+        atualizar();
+    });
+}
+
+iniciarCarrosseis();

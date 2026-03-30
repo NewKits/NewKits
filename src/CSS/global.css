@@ -92,7 +92,7 @@ body {
     right: 0;
     display: none;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease;
     position: absolute;
     min-width: 240px;
     border-radius: 8px;
@@ -121,6 +121,7 @@ body {
     color: #000;
     transition: 0.2s ease;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .barra-perfil nav ul li a:hover{
@@ -178,7 +179,9 @@ hr {
 }
 
 .carrossel-lista {
-    display: flex; 
+    display: flex;
+    transition: transform 0.35s ease;
+    will-change: transform;
 }
 
 .carrossel img {
@@ -228,6 +231,10 @@ hr {
 .btn-carrossel:hover {
     background: rgba(68, 68, 68, 0.8);
     color: #fff;
+}
+
+.btn-carrossel:active {
+    transform: translateY(-50%) scale(0.8);
 }
 
 .btn-anterior{
@@ -322,6 +329,10 @@ footer {
     color: #fff;
 }
 
+.coluna ul li a:hover{
+    text-decoration: underline;
+}
+
 footer p {
     padding: 20px;
 }
@@ -329,27 +340,37 @@ footer p {
 @media (max-width: 768px){
     /* HAMBURGUER */
     .cabecalho {
-       padding: 01rem 1rem;
+       padding: 1rem 1rem;
     }
 
     .cabecalho-menu{
-        width:100%;
+        width:100vw;
         height:100vh;
-        position:absolute;
-        z-index:1;
+        position:fixed;
+        inset:0;
+        z-index:2;
         top:0;
-        left:-100%;
+        left:0;
         gap:0;
-        display: none;
+        display: flex;
         background-color: #000;
+        font-size: 1.3rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: transform 0.35s ease, opacity 0.35s ease, visibility 0.35s ease;
     }
 
     .cabecalho-menu.active{
-        left:0;
-        display: flex;
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        gap: 1rem;
     }
 
     .hamburguer{

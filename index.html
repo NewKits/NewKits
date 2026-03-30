@@ -14,27 +14,35 @@
         <nav class="cabecalho-nav">
             <img class="logo" src="./src/IMG/LogoNewKits.jpeg" alt="Logo Newkits" class="logo">
 
-            <ul class="cabecalho-menu">
-                <li><a href="./src/pages/about.html">Página Inicial</a></li>
-                <li><a href="./src/pages/camisetas.html">Camisetas</a></li>
-                <li><a href="./src/pages/calcas.html">Calças</a></li>
-                <li><a href="./src/pages/shorts.html">Shorts</a></li>
-                <li><a href="./src/pages/tenis.html">Tênis</a></li>
-                <li><a href="./src/pages/acessorios.html">Acessórios</a></li>
-            </ul>
+            <div class="cabecalho-config">
+                <ul class="cabecalho-menu">
+                    <li><a href="./src/pages/about.html" class="item-menu">Página Inicial</a></li>
+                    <li><a href="./src/pages/camisetas.html" class="item-menu">Camisetas</a></li>
+                    <li><a href="./src/pages/calcas.html" class="item-menu">Calças</a></li>
+                    <li><a href="./src/pages/shorts.html" class="item-menu">Shorts</a></li>
+                    <li><a href="./src/pages/tenis.html" class="item-menu">Tênis</a></li>
+                    <li><a href="./src/pages/acessorios.html" class="item-menu">Acessórios</a></li>
+                </ul>
 
-            <a class="btn-icone" href="#">
-                <svg class="icone" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                    <path fill-rule="evenodd"
-                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                </svg>
-            </a>
+                <div class="hamburguer">
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                </div>
+
+                <a class="btn-icone" href="#">
+                    <svg class="icone" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+                </a>
+            </div>
             <div class="barra-perfil">
                 <nav>
                     <ul>
-                        <li><a>Entrar</a></li>
+                        <li><a href="index.html">Entrar</a></li>
                         <li><a>Meu Carrinho</a></li>
                         <li><a>Configurações da Conta</a></li>
                     </ul>
@@ -56,7 +64,7 @@
             <div class="coluna">
                 <h2 class="coluna-titulo">Institucional</h2>
                 <ul>
-                    <li><a href="#">Quem somos nós</a></li>
+                    <li><a href="./src/pages/about.html">Quem somos nós</a></li>
                     <li><a href="#">Política de privacidade</a></li>
                     <li><a href="#">Política de Trocas e devoluções</a></li>
                 </ul>
