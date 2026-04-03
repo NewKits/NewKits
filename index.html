@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CHAMANDO CSS -->
     <link rel="stylesheet" href="./src/CSS/global.css">
+    <link rel="stylesheet" href="./src/CSS/index.css">
     <title>Página Inicial</title>
 </head>
 
@@ -50,7 +51,24 @@
             </div>
         </nav>
     </header>
-    
+    <main class="principal">
+        <section class="login-container">
+            <h2>Digite suas credenciais</h2>
+            <form>
+                <div>
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" autocomplete="username">
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" autocomplete="current-password">
+                </div>
+                
+                <button id="entrar-button" type="submit" onclick="validar(); return false">Entrar</button>
+            </form>
+        </section>
+    </main>
     <footer>
         <section class="sumario">
             <div class="coluna">
@@ -82,6 +100,7 @@
     </footer>
 
     <!-- JAVASCRIPT EXTERNO -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./src/JS/script.js"></script>
 </body>
 

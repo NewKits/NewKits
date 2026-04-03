@@ -21,8 +21,15 @@ html{
 body {
     font-family: "Barlow Semi Condensed", sans-serif;
     background-color: #e2e2e2;
-    height: 100vh;
+    min-height: 100dvh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Pagina Sobre Nós */
@@ -185,7 +192,7 @@ hr {
 }
 
 .carrossel img {
-    border-radius: 2px;
+    border-radius: 3px;
     background-size: cover;
     width: 90%;
     height: auto;
@@ -197,11 +204,12 @@ hr {
     min-width: 350px;
     margin: 10px;
     transition: 0.2s ease-in-out;
+    padding-top: 10px;
 }
 
 .carrossel-item:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    /* transform: translateY(-8px); */
+    border-radius: 6px;
 }
 
 .carrossel-item h3{
@@ -255,18 +263,20 @@ hr {
 .grid-item{
     display: flex;
     text-align: center;
-    gap: 10px;
     transition: 0.2s ease-in-out;
     padding: 0 10px;
+    padding-top: 10px;
 }
 
 .grid-item img{
     width: 100%;
     height: auto;
+    border-radius: 3px;
 }
 
 .grid-item:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
 }
 
 .grid-item h3{
@@ -286,7 +296,7 @@ footer {
     background: #000;
     color: #fff;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0;
     padding-top: 20px;
 }
 
@@ -334,7 +344,7 @@ footer {
 }
 
 footer p {
-    padding: 20px;
+    padding: 1rem;
 }
 
 @media (max-width: 768px){

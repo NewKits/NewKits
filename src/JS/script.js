@@ -7,18 +7,38 @@ function validar() {
     
 
     // Se os campos estiverem preenchidos, faz a validação do login
-    if (usuario === "Admin") {
-        alert("Bem-vindo!");
-        // Redireciona para a página principal
-        location.href = "./src/pages/home.html";
+    if (senha === "123456") {
+        Swal.fire({
+            title: 'Bem-vindo, ' + usuario + '!',
+            text: 'Login realizado com sucesso.',
+            icon: 'success',
+            confirmButtonColor: '#4e4e4e',
+            confirmButtonText: 'OK'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                location.href = "/src/pages/about.html";
+            }
+        });
 
-    } else if (usuario === "" || senha === "") {
-        alert("Por favor, preencha todos os campos.");
+    } else if (!usuario || !senha) {
+        Swal.fire({
+            title: 'Erro',
+            text: 'Por favor, preencha todos os campos.',
+            icon: 'info',
+            confirmButtonColor: '#4e4e4e',
+            confirmButtonText: 'OK'
+        })
 
     }
      else {
         // Se a validação falhar, exibe a mensagem de erro.
-        alert("Usuário e senha inválidos.");
+        Swal.fire({
+            title: 'Erro',
+            text: 'Usuário e senha inválidos.',
+            icon: 'error',
+            confirmButtonColor: '#4e4e4e',
+            confirmButtonText: 'OK'
+        });
     }
 
 }
