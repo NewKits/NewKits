@@ -16,7 +16,7 @@ function validar() {
             confirmButtonText: 'OK'
         }).then((result) => {
             if (result.isConfirmed) {
-                location.href = "/src/pages/about.html";
+                location.href = "/src/assets/pages/camisetas.html";
             }
         });
 
@@ -48,9 +48,9 @@ function comprar(){
 }
 
 const bannerItems = [
-    "../IMG/Banners/BannerPromoCamisetas.png", 
-    "../IMG/Banners/BannerPromoCalcas.png",
-    "../IMG/Banners/BannerPromoShorts.png"
+    "../img/Banners/BannerPromoCamisetas.png", 
+    "../img/Banners/BannerPromoCalcas.png",
+    "../img/Banners/BannerPromoShorts.png"
 ];
 
 let i = 0;
