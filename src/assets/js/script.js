@@ -4,7 +4,7 @@ function validar() {
     let senha = document.getElementById("senha").value;
 
     // Se qualquer um dos campos estiver vazio, exibe um alerta e para a execução da função.
-    
+
 
     // Se os campos estiverem preenchidos, faz a validação do login
     if (senha === "123456") {
@@ -30,7 +30,7 @@ function validar() {
         })
 
     }
-     else {
+    else {
         // Se a validação falhar, exibe a mensagem de erro.
         Swal.fire({
             title: 'Erro',
@@ -43,12 +43,12 @@ function validar() {
 
 }
 
-function comprar(){
+function comprar() {
     location.href = "comprar.html"
 }
 
 const bannerItems = [
-    "../img/Banners/BannerPromoCamisetas.png", 
+    "../img/Banners/BannerPromoCamisetas.png",
     "../img/Banners/BannerPromoCalcas.png",
     "../img/Banners/BannerPromoShorts.png"
 ];
@@ -57,7 +57,7 @@ let i = 0;
 const tempo = 5000;
 const elementoBanner = document.querySelector(".banner");
 
-function slideshow (){
+function slideshow() {
     if (!elementoBanner) {
         return;
     }
@@ -94,7 +94,7 @@ if (btnIcone && barraPerfil) {
 const hamburguer = document.querySelector('.hamburguer');
 const cabecalhoMenu = document.querySelector('.cabecalho-menu');
 
-function toggleMenu(){
+function toggleMenu() {
     if (!hamburguer || !cabecalhoMenu) {
         return;
     }
@@ -111,6 +111,18 @@ if (hamburguer && cabecalhoMenu) {
     });
 }
 
+// FOTO TIME
+const itemLista = document.querySelectorAll('.sobre-nos ul li');
+itemLista.forEach((item) => {
+    item.addEventListener('click', function(){
+        const foto = this.querySelector('.foto-time');
+        if (foto.style.display === 'none') {
+            foto.style.display = 'block'; // Faz aparecer
+        } else
+            foto.style.display = 'none';
+    })
+});
+
 // CARROSSEL DE IMAGENS
 function iniciarCarrosseis() {
     const carrosseis = document.querySelectorAll('.carrossel');
@@ -121,7 +133,7 @@ function iniciarCarrosseis() {
         const btnAnterior = carrossel.querySelector('.btn-anterior');
         const btnProximo = carrossel.querySelector('.btn-proximo');
 
-        if (!lista || !itens.length || !btnAnterior || !btnProximo) 
+        if (!lista || !itens.length || !btnAnterior || !btnProximo)
             return;
 
         let indice = 0;

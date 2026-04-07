@@ -47,6 +47,47 @@
     font-size: 1.4rem;
 }
 
+.sobre-nos ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    list-style-type: none;
+    font-size: 1.4rem;
+    margin-top: 0.2rem;
+    gap: 1rem;
+    text-align: center;
+}
+
+.sobre-nos ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+    border: 1px solid #3b3b3b;
+    border-radius: 3px;
+    background-color: #d8d8d8;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    align-items: center;
+}
+
+.foto-time {
+    display: none;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.sobre-nos ul li:hover {
+    background-color: #535353;
+    border-color: #000;
+    color: #fff;
+}
+
+.sobre-nos ul li:active {
+    transform: scale(0.95);
+}
+
 /* LOGIN */
 .login-container {
     display: flex;
@@ -113,5 +154,13 @@ input[type="password"] {
     }
     .sobre-nos {
         padding: 2rem;
+    }
+    .sobre-nos ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre-nos ul li {
+        width: 70%;
+        font-size: 1.5rem;
     }
 }
