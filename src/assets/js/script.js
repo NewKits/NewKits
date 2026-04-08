@@ -111,18 +111,6 @@ if (hamburguer && cabecalhoMenu) {
     });
 }
 
-// FOTO TIME
-const itemLista = document.querySelectorAll('.sobre-nos ul li');
-itemLista.forEach((item) => {
-    item.addEventListener('click', function(){
-        const foto = this.querySelector('.foto-time');
-        if (foto.style.display === 'none') {
-            foto.style.display = 'block'; // Faz aparecer
-        } else
-            foto.style.display = 'none';
-    })
-});
-
 // CARROSSEL DE IMAGENS
 function iniciarCarrosseis() {
     const carrosseis = document.querySelectorAll('.carrossel');

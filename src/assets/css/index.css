@@ -72,20 +72,17 @@
 }
 
 .foto-time {
-    display: none;
+    display: block;
     width: 200px;
     height: auto;
     border-radius: 50%;
+    margin: 0.5rem 0;
 }
 
 .sobre-nos ul li:hover {
     background-color: #535353;
     border-color: #000;
     color: #fff;
-}
-
-.sobre-nos ul li:active {
-    transform: scale(0.95);
 }
 
 /* LOGIN */
