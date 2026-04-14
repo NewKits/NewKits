@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/index.css">
     <title>Página Inicial</title>
+    <link rel="icon" href="../img/LogoNewKits.jpeg" type="image/jpeg">
 </head>
 
 <body>
@@ -17,18 +18,20 @@
 
             <div class="cabecalho-config">
                 <ul class="cabecalho-menu">
-                    <li><a href="./about.html" class="item-menu">Página Inicial</a></li>
+                    <li><a href="../../../index.html" class="item-menu">Página Inicial</a></li>
                     <li><a href="./camisetas.html" class="item-menu">Camisetas</a></li>
                     <li><a href="./calcas.html" class="item-menu">Calças</a></li>
                     <li><a href="./shorts.html" class="item-menu">Shorts</a></li>
                     <li><a href="./tenis.html" class="item-menu">Tênis</a></li>
                     <li><a href="./acessorios.html" class="item-menu">Acessórios</a></li>
                 </ul>
+
                 <div class="hamburguer">
                     <span class="linha"></span>
                     <span class="linha"></span>
                     <span class="linha"></span>
                 </div>
+
                 <a class="btn-icone" href="#">
                     <svg class="icone" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -41,7 +44,7 @@
             <div class="barra-perfil">
                 <nav>
                     <ul>
-                        <li><a href="../../../index.html">Entrar</a></li>
+                        <li><a href="./login.html">Entrar</a></li>
                         <li><a>Meu Carrinho</a></li>
                         <li><a>Configurações da Conta</a></li>
                     </ul>
@@ -50,32 +53,21 @@
         </nav>
     </header>
     <main class="principal">
-        <section class="banner">
-        </section>
-        <section class="sobre-nos">
-            <h1>Sobre Nós</h1>
-            <p>A NewKits é uma loja de roupas e acessórios que tem como missão oferecer produtos de alta qualidade,
-                estilo e
-                conforto para nossos clientes. Fundada em 2020, a NewKits nasceu da paixão por moda e do desejo de criar
-                uma
-                marca que refletisse as últimas tendências, ao mesmo tempo em que valorizasse a individualidade de cada
-                pessoa.</p>
-            <p>Na NewKits, acreditamos que a moda é uma forma de expressão</p>
-            <h1>Nossos objetivos</h1>
-            <p>Nosso objetivo é proporcionar uma experiência de compra única, onde nossos clientes possam encontrar
-                peças
-                que se encaixem perfeitamente em seu estilo de vida e personalidade. Buscamos constantemente inovar e
-                expandir nossa linha de produtos, oferecendo uma variedade de opções para atender às necessidades e
-                preferências de nossos clientes.</p>
-            <h1>Nosso Time</h1>
-            <p>Nosso time é composto pelos seguintes dedicados profissionais:</p>
-            <ul>
-                <li><img class="foto-time" src="../img/Time/Guilherme.jpeg" alt="Guilherme Tamashiro">Guilherme Tamashiro - Backend Developer</li>
-                <li><img class="foto-time" src="../img/Time/Enzo.jpeg" alt="Enzo Santiago">Enzo Santiago - Frontend Developer</li>
-                <li><img class="foto-time" id="foto-juan" src="../img/Time/Juan.jpeg" alt="Juan Nascimento">Juan Nascimento - Designer</li>
-                <li><img class="foto-time" src="../img/Time/Furlan.jpeg" alt="Leonardo Furlan">Leonardo Furlan - Designer</li>
-                <li><img class="foto-time" src="../img/Time/Otavio.jpeg" alt="Otávio Aguiar">Otávio Aguiar - Frontend Developer</li>
-            </ul>
+        <section class="login-container">
+            <h2>Digite suas credenciais</h2>
+            <form>
+                <div>
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" autocomplete="username">
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" autocomplete="current-password">
+                </div>
+                
+                <button id="entrar-button" type="submit" onclick="validar(); return false">Entrar</button>
+            </form>
         </section>
     </main>
     <footer>
@@ -91,7 +83,7 @@
             <div class="coluna">
                 <h2 class="coluna-titulo">Institucional</h2>
                 <ul>
-                    <li><a href="./about.html">Quem somos nós</a></li>
+                    <li><a href="../../../index.html">Quem somos nós</a></li>
                     <li><a href="#">Política de privacidade</a></li>
                     <li><a href="#">Política de Trocas e devoluções</a></li>
                 </ul>
@@ -105,10 +97,11 @@
                 </ul>
             </div>
         </section>
-        <p>&copy;2025 - Direitos reservados</p>
+        <p>&copy;2026 - Direitos reservados</p>
     </footer>
 
     <!-- JAVASCRIPT EXTERNO -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/script.js"></script>
 </body>
 

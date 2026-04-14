@@ -53,6 +53,12 @@
     font-weight: 500;
 }
 
+#button-voltar{
+    border: #000;
+    width: 200px;
+    height: 100px;
+}
+
 @media (max-width: 768px){
     .sessao-principal{
         flex-direction: column;
