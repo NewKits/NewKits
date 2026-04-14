@@ -74,9 +74,15 @@
 .foto-time {
     display: block;
     width: 200px;
-    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     border-radius: 50%;
+    border: 1px solid #3b3b3b;
     margin: 0.5rem 0;
+}
+
+#foto-juan {
+    position: relative;
 }
 
 .sobre-nos ul li:hover {
