@@ -53,10 +53,34 @@
     font-weight: 500;
 }
 
-#button-voltar{
-    border: #000;
-    width: 200px;
-    height: 100px;
+.btn-voltar {
+    display: inline-flex;
+    align-items: top;
+    gap: 8px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-voltar svg {
+    transition: transform 0.3s;
+}
+
+.btn-voltar:hover {
+    color: #555;
+}
+
+.btn-voltar:hover svg {
+    transform: translateX(-6px);
+}
+.btn-voltar h3{
+    padding: 5px;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
 }
 
 @media (max-width: 768px){

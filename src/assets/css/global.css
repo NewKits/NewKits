@@ -86,6 +86,8 @@ body {
 
 .logo{
     width: 70px;
+    max-width: 100%;
+    height: auto;
 }
 
 .btn-icone {
